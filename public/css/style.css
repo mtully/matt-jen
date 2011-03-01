@@ -49,40 +49,37 @@ li {
 }
 
 body{
-	background-image: url(../images/tile.gif);
+	background-image: url(../images/tile.jpg);
 }
 
 /* @end */
 
 .container {
-	padding: 0 60px;
+	padding-left: 60px;
+	padding-bottom: 30px;
+	padding-right: 60px;
+	padding-top: 10px;
 	margin: 0 auto;
 	width: 648px;
 	-webkit-tap-highlight-color: rgb(255,255,0);
 }
 
 header {
-	background: #FDF9E9;
 }
 
 header .container{
-	background: url(../images/floral-tile.gif) repeat;
 }
 
 #date {
-	background-color:#FEE7CB;
 }
 
 #location{
-	background-color:#6F002B;
 }
 
 #rsvp{
-	background-color:#E0572D;
 }
 
 #registry{
-	background-color:#6D7F2C;
 }
 
 @media only screen and (max-width: 767px) and (min-width: 480px) {
@@ -122,7 +119,6 @@ header .container{
 	only screen and (min-device-pixel-ratio: 2) {
 
 #example {
-	background: rgb(255,158,97);
 }
 
 }
