@@ -1,0 +1,180 @@
+/* @override http://localhost:3000/css/style.css?v=2 */
+
+/* @group Reset */
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
+img, ins, q, small, strong, sub, sup, dl, dt, dd, ol, ul, li, 
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, figure, figure img, figcaption, hgroup,
+footer, header, nav, section {
+	display: block;
+}
+
+a img {
+	border: 0;
+}
+
+figure {
+	position: relative;
+}
+
+figure img {
+	width: 100%;
+}
+
+li {
+	list-style: none;
+}
+
+.clearfix {
+	clear: both;
+}
+
+/* @end */
+
+/* @group Global */
+
+::selection {
+	background: rgb(255,255,0);
+}
+
+::-moz-selection {
+	background: rgb(255,255,0);
+}
+
+body{
+	background-image: url(../images/tile.gif);
+}
+
+/* @end */
+
+.container {
+	padding: 0 60px;
+	margin: 0 auto;
+	width: 648px;
+	-webkit-tap-highlight-color: rgb(255,255,0);
+}
+
+header {
+	background: #FDF9E9;
+}
+
+header .container{
+	background: url(../images/floral-tile.gif) repeat;
+}
+
+#date {
+	background-color:#FEE7CB;
+}
+
+#location{
+	background-color:#6F002B;
+}
+
+#rsvp{
+	background-color:#E0572D;
+}
+
+#registry{
+	background-color:#6D7F2C;
+}
+
+@media only screen and (max-width: 767px) and (min-width: 480px) {
+
+.container {
+	padding: 0 42px;
+	width: 396px;
+}
+
+.left {
+	display: none;
+	margin: 0;
+	padding: 0;
+	width: 0;
+}
+
+.right {
+	float: none;
+	width: 396px;
+}
+
+}
+
+@media only screen and (max-width: 479px) {
+
+.container {
+	padding: 0 46px;
+	width: 320px;
+}
+
+}
+
+/* @group iPhone 4 Override */
+
+@media 
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min-device-pixel-ratio: 2) {
+
+#example {
+	background: rgb(255,158,97);
+}
+
+}
+
+/* @end */
+
+@media print {
+
+* {
+	background: transparent !important;
+	color: #444 !important;
+	text-shadow: none !important;
+}
+
+a, a:visited {
+	color: #444 !important;
+	text-decoration: underline;
+}
+
+a:after {
+	content: " (" attr(href) ")";
+}
+
+abbr:after {
+	content: " (" attr(title) ")";
+}
+
+.ir a:after {
+	content: "";
+}
+
+pre, blockquote {
+	border: 1px solid #999;
+	page-break-inside: avoid;
+}
+
+thead {
+	display: table-header-group;
+}
+
+tr, img {
+	page-break-inside: avoid;
+}
+  @page { margin: 0.5cm; }
+
+p, h2, h3 {
+	orphans: 3;
+	widows: 3;
+}
+
+h2, h3 {
+	page-break-after: avoid;
+}
+
+}
