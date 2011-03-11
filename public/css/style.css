@@ -49,8 +49,7 @@ li {
 }
 
 body{
-	background-color: #fcfef2;
-	background-image: url(../images/tile.gif);
+	background-color: #fff;
 }
 
 /* @end */
@@ -65,43 +64,45 @@ body{
 	margin: 0 auto;
 }
 
-/* header h1{
-	content: url(../images/header.jpg), "Jennifer Cahill and Matthew Tully are getting married.";
+header {
+	content: url(../images/header.jpg), "We are getting married. Save the Date. Jennifer & Matthew.";
 	width: 620px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 30px;
-} */
-
-#main h2{
-	font: small-caps 22px Georgia, "Times New Roman", Times, serif;
-	color: rgba(202,190,171,0.73);
-	margin-bottom: 14px;
-	text-transform: lowercase;
-	letter-spacing: 1px;
 }
 
-p.location{
-	color: rgba(87,66,76,0.51);
-	font: bold 18px/22px "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
-	letter-spacing: .04em;
-	margin-bottom: 24px;
-	text-shadow: #fff 1px 1px;
+#date {
+	content: url(../images/date.jpg), "September 3rd, 2011";
+	width: 620px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
 }
 
-a.directions{
-	text-decoration: none;
-	color: #5494d0;
-	text-transform: lowercase;
-	font: small-caps 18px Georgia, "Times New Roman", Times, serif;
-	letter-spacing: 1px;
+#ceremony{
+		content: url(../images/ceremony.jpg), "September 3rd, 2011";
+	width: 620px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
 }
 
-#main section{
-	padding: 20px 10px;
-	border-top: 1px solid #ffffff;
-	border-bottom: 1px solid rgba(200,177,111,0.34);
+#reception{
+		content: url(../images/reception.jpg), "September 3rd, 2011";
+	width: 620px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
 }
+
+#hotel{
+		content: url(../images/hotel.jpg), "September 3rd, 2011";
+	width: 620px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+}
+
 
 @media only screen and (max-width: 767px) and (min-width: 480px) {
 
