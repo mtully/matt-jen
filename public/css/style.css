@@ -1,22 +1,11 @@
 /* @override http://localhost:3000/css/style.css?v=2 */
 
-/* @group Reset */
-
-::selection {
-	background: rgba(223,223,223,0.5);
-}
-
-::-moz-selection {
-	background: rgba(223,223,223,0.5);
-}
-
-body{
+body {
 	background-image: url(../images/tile.gif);
-		font-family: Georgia, "Times New Roman", Times, serif;
-
+	font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-header{
+header {
 	background: #ef6a46 url(../images/glow.png) no-repeat 50% 0;
 	padding-top: 10px;
 }
@@ -26,23 +15,23 @@ header{
 	margin: 0 auto;
 }
 
-#photos img{
+#photos img {
 	-webkit-transition: -webkit-transform .15s linear;
--webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
--moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+	-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+	-moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
 }
 
-img.jen{
+img.jen {
 	width: 300px;
 	-webkit-transform: rotate(2deg);
--moz-transform: rotate(2deg);
+	-moz-transform: rotate(2deg);
 	margin-left: 26px;
 }
 
-img.matt{
+img.matt {
 	width: 200px;
 	-webkit-transform: rotate(-3deg);
--moz-transform: rotate(-3deg);
+	-moz-transform: rotate(-3deg);
 	margin-top: 20px;
 	margin-left: 15px;
 }
@@ -69,11 +58,11 @@ img.matt{
 	margin-bottom: 5px;
 }
 
-#events .container{
+#events .container {
 	display: block;
 }
 
-h2{
+h2 {
 	font-variant: small-caps;
 	letter-spacing: 3px;
 	font-size: 18px;
@@ -95,19 +84,18 @@ a.directions {
 	background-color: rgba(197,233,243,0.5);
 	padding: 2px 5px;
 	color: #3886b9;
-	-moz-border-radius: 3px	;
+	-moz-border-radius: 3px;
 	border-radius: 3px;
 	font-variant: small-caps;
 	letter-spacing: 1px;
 }
 
-a.directions:hover{
+a.directions:hover {
 	background-color: rgba(205,243,253,0.5);
 	color: #3c94cb;
-
 }
 
-#ceremony{
+#ceremony {
 	float: left;
 	padding-left: 120px;
 	background: url(../images/church.png) no-repeat 65px 0;
@@ -115,14 +103,13 @@ a.directions:hover{
 	padding-right: 40px;
 }
 
-#reception{
+#reception {
 	float: left;
 	padding-left: 80px;
 	background: url(../images/reception.png) no-repeat 25px 0;
-
 }
 
-#hotel{
+#hotel {
 	clear: both;
 	border-bottom: 1px solid #ff9f82;
 	border-top: 1px solid #ff9f82;
@@ -130,17 +117,14 @@ a.directions:hover{
 	margin-bottom: 5px;
 }
 
-#hotel .container{
+#hotel .container {
 	width: 420px;
 	padding-left: 220px;
 	padding-top: 20px;
-	background: url(../images/reservations.png) no-repeat 50px 20px;
+	background: url(../images/reservations.png) no-repeat 80px 50px;
 }
 
-/* My Comment */
-
-
-#hotel h2{
+#hotel h2 {
 	font-variant: small-caps;
 	letter-spacing: 3px;
 	font-size: 18px;
@@ -148,23 +132,23 @@ a.directions:hover{
 	margin-bottom: 10px;
 }
 
-#hotel p.location{
+#hotel p.location {
 	color: #9a977b;
 }
 
-p.reserve{
+p.reserve {
 	color: #71716b;
 	margin-bottom: 20px;
 }
 
-span.callout{
+span.callout {
 	color: #060606;
 }
 
-#registry{
+#registry {
 	border-top: 1px solid #ff9f82;
-
 }
+
 .container {
 	padding-left: 60px;
 	padding-bottom: 30px;
@@ -174,6 +158,8 @@ span.callout{
 	-webkit-tap-highlight-color: rgb(255,255,0);
 	margin: 0 auto;
 }
+
+/* @group Reset */
 
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
 p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
@@ -207,6 +193,14 @@ li {
 
 .clearfix {
 	clear: both;
+}
+
+::selection {
+	background: rgba(223,223,223,0.5);
+}
+
+::-moz-selection {
+	background: rgba(223,223,223,0.5);
 }
 
 /* @end */
