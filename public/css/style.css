@@ -5,7 +5,7 @@
 	by Joni Korpi
 	License: http://creativecommons.org/licenses/MIT/	*/
 
-/* @group Resets */
+/* Resets */
 
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
 p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
@@ -13,403 +13,151 @@ img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr,
 dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, figure, figcaption, hgroup, 
-menu, footer, header, nav, section, summary, time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-}
+menu, footer, header, nav, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0;}
 
 article, aside, canvas, figure, figure img, figcaption, hgroup,
-footer, header, nav, section, audio, video {
-	display: block;
-}
+footer, header, nav, section, audio, video {display: block;}
 
 a img {border: 0;}
 
-/* @end */
+/* Typography */
 
-/* @group Typography */
+h1#names {content: url('../images/names.png'), "Jennifer Cahill & Matthew Tully"; margin: 0 auto;}
 
-h1#names {
-	content: url('../images/names.png'), "Jennifer Cahill & Matthew Tully";
-	margin: 0 auto;
-}
+h2#tagline {content: url('../images/married.png'), "We're getting married"; margin: 0 auto;}
 
-h2#tagline {
-	content: url('../images/married.png'), "We're getting married";
-	margin: 0 auto;
-}
+h3 {font-variant: small-caps; letter-spacing: 3px; font-size: 18px; color: #6e9d59; line-height: 40px;}
 
-h3 {
-	font-variant: small-caps;
-	letter-spacing: 3px;
-	font-size: 18px;
-	color: #6e9d59;
-	line-height: 40px;
-}
+h4#date {margin: 0 auto; text-align: center; color: #6e9d59; letter-spacing: 1px; line-height: 12px; font-size: 21px; font-weight: bold;}
 
-h4#date {
-	margin: 0 auto;
-	text-align: center;
-	color: #6e9d59;
-	letter-spacing: 1px;
-	line-height: 12px;
-	font-size: 21px;
-	font-weight: bold;
-}
+body {font-family: Georgia, "Times New Roman", Times, serif;}
 
+p.location {color: #a6a284; font-size: 16px; line-height: 22px; text-shadow: 1px 1px #ffffff; margin-bottom: 10px;}
 
-body {
-	font-family: Georgia, "Times New Roman", Times, serif;
-}
+a.directions {font-size: 16px; text-decoration: none; background-color: rgba(161,89,130,0.5); padding: 2px 5px; color: #753057; -moz-border-radius: 3px; border-radius: 3px; font-variant: small-caps; letter-spacing: 1px;}
 
-p.location {
-	color: #a6a284;
-	font-size: 16px;
-	line-height: 22px;
-	text-shadow: 1px 1px #ffffff;
-	margin-bottom: 10px;
-}
+a.directions:hover {background-color: rgba(188,104,151,0.5); color: #8f3b6a;}
 
-a.directions {
-	font-size: 16px;
-	text-decoration: none;
-	background-color: rgba(161,89,130,0.5);
-	padding: 2px 5px;
-	color: #753057;
-	-moz-border-radius: 3px;
-	border-radius: 3px;
-	font-variant: small-caps;
-	letter-spacing: 1px;
-}
+#hotel p.location {color: #9a977b;}
 
-a.directions:hover {
-	background-color: rgba(188,104,151,0.5);	
-	color: #8f3b6a;
-}
+p.reserve {color: #71716b; margin-bottom: 20px;}
 
-#hotel p.location {
-	color: #9a977b;
-}
+span.callout {color: #33302e; text-transform: lowercase; font-variant: small-caps; font-size: 20px; letter-spacing: 1px;}
 
-p.reserve {
-	color: #71716b;
-	margin-bottom: 20px;
-}
+/* Selection */
 
-span.callout {
-	color: #33302e;
-	text-transform: lowercase;
-	font-variant: small-caps;
-	font-size: 20px;
-	letter-spacing: 1px;
-}
+::-moz-selection {background: rgb(255,255,158);}
 
-/* @end */
+img::selection {background: transparent;}
 
-/* @group Selection */
+img::-moz-selection {background: transparent;}
 
-::-moz-selection 	{background: rgb(255,255,158);}
-img::selection 		{background: transparent;}
-img::-moz-selection	{background: transparent;}
 body {-webkit-tap-highlight-color: rgb(255,255,158);}
 
-/* @end */
+/* 992px */
 
-/* @group 992px */
+body {background-image: url(../images/tile.gif);}
 
-/*		Default Layout: 992px. 
-		Gutters: 24px.
-		Outer margins: 48px.
-		Leftover space for scrollbars @1024px: 32px.
--------------------------------------------------------------------------------
-cols    1     2      3      4      5      6      7      8      9      10
-px      68    160    252    344    436    528    620    712    804    896    */
+.group {width: 100%;}
 
-body {
-	background-image: url(../images/tile.gif);
-	
-}
+.container {width: 896px; padding: 20px 48px; -webkit-text-size-adjust: 100%; margin: 0 auto;}
 
-.group{
-	width: 100%;
-}
+header {background: #a8ce93 url(../images/glow.png) no-repeat 50% 0;}
 
-.container {
-	width: 896px;
-	padding: 20px 48px;
-	-webkit-text-size-adjust: 100%;
-	margin: 0 auto;
-}
+#photos {margin: 0 auto; width: 510px;}
 
-header {
-	background: #a8ce93 url(../images/glow.png) no-repeat 50% 0;
-}
+#photos img {-webkit-transition: -webkit-transform .15s linear; -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25); -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);}
 
-#photos {
-	margin: 0 auto;
-	width: 510px;
-}
+img.jen {width: 300px; -webkit-transform: rotate(2deg); -moz-transform: rotate(2deg);}
 
-#photos img {
-	-webkit-transition: -webkit-transform .15s linear;
-	-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
-	-moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
-}
+img.matt {width: 200px; -webkit-transform: rotate(-3deg); -moz-transform: rotate(-3deg); margin-top: 20px;}
 
-img.jen {
-	width: 300px;
-	-webkit-transform: rotate(2deg);
-	-moz-transform: rotate(2deg);
-}
+#main.group {background: url(../images/fence.gif) repeat-x; border-bottom: 1px solid #a8ce93; padding-top: 20px; padding-bottom: 20px; margin-bottom: 5px;}
 
-img.matt {
-	width: 200px;
-	-webkit-transform: rotate(-3deg);
-	-moz-transform: rotate(-3deg);
-	margin-top: 20px;
-}
+#ceremony {width: 227px; float: left; background: url(../images/church.png) no-repeat 160px 5px; border-right: 2px dotted #ddd8be; padding-left: 220px;}
 
-#main.group{
-	background: url(../images/fence.gif) repeat-x;
-	border-bottom: 1px solid #a8ce93;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	margin-bottom: 5px;
-}
+#reception {width: 347px; padding-left: 100px; float: left; background: url(../images/reception.png) no-repeat 40px 5px;}
 
-#ceremony {
-	width: 227px;
-	float: left;
-	background: url(../images/church.png) no-repeat 160px 5px;
-	border-right: 2px dotted #ddd8be;
-	padding-left: 220px;
-}
+#hotel .container {width: 496px; padding-left: 400px; background: url(../images/reservations.png) no-repeat 290px 50px;}
 
-#reception {
-	width: 347px;
-	padding-left: 100px;
-	float: left;
-	background: url(../images/reception.png) no-repeat 40px 5px;
-}
+#hotel {clear: both; border-bottom: 1px solid #a8ce93; border-top: 1px solid #a8ce93; background-color: rgba(223,222,209,0.52); margin-bottom: 5px;}
 
-#hotel .container {
-	width: 496px;
-	padding-left: 400px;
-	background: url(../images/reservations.png) no-repeat 290px 50px;
-}
+#registry {border-top: 1px solid #a8ce93; text-align: center;}
 
-#hotel {
-	clear: both;
-	border-bottom: 1px solid #a8ce93;
-	border-top: 1px solid #a8ce93;
-	background-color: rgba(223,222,209,0.52);
-	margin-bottom: 5px;
-}
-
-#registry {
-	border-top: 1px solid #a8ce93;
-	text-align: center;
-}
-
-
-/* @end */
-
-/* @group 768px */
-
-/*		Tablet Layout: 768px.
-		Gutters: 24px.
-		Outer margins: 28px.
-		Inherits styles from: Default Layout.
------------------------------------------------------------------
-cols    1     2      3      4      5      6      7      8
-px      68    160    252    344    436    528    620    712    */
+/* 768px */
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-	
-	.container {
-		width: 712px;
-		padding: 20px 28px;
-	}
-	
-	
 
-#main.group{
-	padding-top: 0px;
-	padding-bottom: 0px;
-	margin-bottom: 3px;
+.container {width: 712px; padding: 20px 28px;}
+
+#main.group {padding-top: 0px; padding-bottom: 0px; margin-bottom: 3px;}
+
+#ceremony, #reception {width: 412px; float: none; border-right: none; padding-left: 300px;}
+
+#ceremony {background: url(../images/church.png) no-repeat 220px 5px; margin-bottom: 30px; margin-top: 20px;}
+
+#reception {background: url(../images/reception.png) no-repeat 220px 5px;}
+
+#hotel .container {width: 402px; padding-left: 310px; background: url(../images/reservations.png) no-repeat 190px 50px;}
+
+#hotel {border-bottom: 1px solid #a8ce93; border-top: 1px solid #a8ce93; background-color: rgba(223,222,209,0.52); margin-bottom: 3px;}
+
+#registry {border-top: 1px solid #a8ce93; text-align: center;}
+
 }
 
-#ceremony, #reception {
-	width: 412px;
-	float: none;
-	border-right: none;
-	padding-left: 300px;
-}
-
-#ceremony{
-	background: url(../images/church.png) no-repeat 220px 5px;
-	margin-bottom: 30px;
-	margin-top: 20px;
-}
-
-#reception{
-	background: url(../images/reception.png) no-repeat 220px 5px;
-}
-
-#hotel .container {
-	width: 402px;
-	padding-left: 310px;
-	background: url(../images/reservations.png) no-repeat 190px 50px;
-}
-
-#hotel {
-	border-bottom: 1px solid #a8ce93;
-	border-top: 1px solid #a8ce93;
-	background-color: rgba(223,222,209,0.52);
-	margin-bottom: 3px;
-}
-
-#registry {
-	border-top: 1px solid #a8ce93;
-	text-align: center;
-}
-}
-
-/* @end */
-
-/* @group 320px */
-
-/*		Mobile Layout: 320px.
-		Gutters: 24px.
-		Outer margins: 34px.
-		Inherits styles from: Default Layout.
----------------------------------------------
-cols    1     2      3
-px      68    160    252    */
+/* 320px */
 
 @media only screen and (max-width: 767px) {
-	
-	.container {
-		width: 252px;
-		padding: 10px 34px;
-	}
-	
-	
 
-h1#names {
-	width: 243px;
+.container {width: 252px; padding: 10px 34px;}
+
+h1#names {width: 243px;}
+
+img.jen {width: 252px; margin-top: 10px; margin-bottom: 10px;}
+
+img.matt {display: none;}
+
+h2#tagline {width: 252px;}
+
+h4#date {font-size: 13px;}
+
+#main.group {padding-top: 0px; padding-bottom: 0px; margin-bottom: 3px;}
+
+#ceremony, #reception {width: 202px; float: none; border-right: none; padding-left: 50px;}
+
+#ceremony {background: url(../images/church.png) no-repeat 0 5px; margin-bottom: 50px; margin-top: 20px;}
+
+#reception {background: url(../images/reception.png) no-repeat 0 5px;}
+
+#hotel-inner.container {width: 202px; padding-left: 90px; background: url(../images/reservations.png) no-repeat -3px 50px; padding-bottom: 20px;}
+
+p.reserve, span.callout {font-size: 14px;}
+
+#registry {border-top: 1px solid #a8ce93; text-align: center;}
+
 }
 
-img.jen{
-	width: 252px;
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
-
-img.matt{
-	display: none;
-}
-
-h2#tagline {
-	width: 252px;
-}
-
-h4#date {
-	font-size: 13px;
-}
-
-	
-	
-
-#main.group{
-	padding-top: 0px;
-	padding-bottom: 0px;
-	margin-bottom: 3px;
-}
-
-#ceremony, #reception {
-	width: 202px;
-	float: none;
-	border-right: none;
-	padding-left: 50px;
-}
-
-#ceremony{
-	background: url(../images/church.png) no-repeat 0 5px;
-	margin-bottom: 50px;
-	margin-top: 20px;
-}
-
-#reception{
-	background: url(../images/reception.png) no-repeat 0 5px;
-}
-
-#hotel-inner.container {
-	width: 202px;
-	padding-left: 90px;
-	background: url(../images/reservations.png) no-repeat -3px 50px;
-	padding-bottom: 20px;
-}
-
-p.reserve, span.callout{
-	font-size: 14px;
-}
-
-
-
-#registry {
-	border-top: 1px solid #a8ce93;
-	text-align: center;
-}
-}
-
-/* @end */
-
-/* My Comment */
-
-/* @group Reset */
+/* Reset */
 
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
 p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
 img, ins, q, small, strong, sub, sup, dl, dt, dd, ol, ul, li, 
-fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
-	margin: 0;
-	padding: 0;
-	border: 0;
-}
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin: 0; padding: 0; border: 0;}
 
 article, aside, figure, figure img, figcaption, hgroup,
-footer, header, nav, section {
-	display: block;
-}
+footer, header, nav, section {display: block;}
 
-a img {
-	border: 0;
-}
+a img {border: 0;}
 
-figure {
-	position: relative;
-}
+figure {position: relative;}
 
-figure img {
-	width: 100%;
-}
+figure img {width: 100%;}
 
-li {
-	list-style: none;
-}
+li {list-style: none;}
 
-.clearfix {
-	clear: both;
-}
+.clearfix {clear: both;}
 
-::selection {
-	background: rgba(223,223,223,0.5);
-}
+::selection {background: rgba(223,223,223,0.5);}
 
-::-moz-selection {
-	background: rgba(223,223,223,0.5);
-}
-
-/* @end */
+::-moz-selection {background: rgba(223,223,223,0.5);}
