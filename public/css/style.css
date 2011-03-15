@@ -1,5 +1,3 @@
-/* @override http://localhost:3000/css/style.css */
-
 /*	Less Framework 4
 	http://lessframework.com
 	by Joni Korpi
@@ -113,6 +111,8 @@ img.matt {width: 200px; -webkit-transform: rotate(-3deg); -moz-transform: rotate
 .container {width: 252px; padding: 10px 34px;}
 
 h1#names {width: 243px;}
+
+#photos {margin: 0 auto; width: 252px;}
 
 img.jen {width: 252px; margin-top: 10px; margin-bottom: 10px;}
 
