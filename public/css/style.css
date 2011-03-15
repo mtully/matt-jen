@@ -2,6 +2,179 @@
 
 /* @group Reset */
 
+::selection {
+	background: rgba(223,223,223,0.5);
+}
+
+::-moz-selection {
+	background: rgba(223,223,223,0.5);
+}
+
+body{
+	background-image: url(../images/tile.gif);
+		font-family: Georgia, "Times New Roman", Times, serif;
+
+}
+
+header{
+	background: #ef6a46 url(../images/glow.png) no-repeat 50% 0;
+	padding-top: 10px;
+}
+
+#name h1 {
+	content: url('../images/names.png'), "Jennifer Cahill & Matthew Tully";
+	margin: 0 auto;
+}
+
+#photos img{
+	-webkit-transition: -webkit-transform .15s linear;
+-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+-moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+}
+
+img.jen{
+	width: 300px;
+	-webkit-transform: rotate(2deg);
+-moz-transform: rotate(2deg);
+	margin-left: 26px;
+}
+
+img.matt{
+	width: 200px;
+	-webkit-transform: rotate(-3deg);
+-moz-transform: rotate(-3deg);
+	margin-top: 20px;
+	margin-left: 15px;
+}
+
+#name h2 {
+	content: url('../images/married.png'), "We're getting married";
+	margin: 0 auto;
+}
+
+#date p {
+	margin: 0 auto;
+	text-align: center;
+	color: #f2f1d4;
+	letter-spacing: 1px;
+	line-height: 12px;
+	font-size: 21px;
+	font-weight: bold;
+}
+
+#events {
+	background: url(../images/fence.gif) repeat-x;
+	border-bottom: 1px solid #ff9f82;
+	padding-top: 30px;
+	margin-bottom: 5px;
+}
+
+#events .container{
+	display: block;
+}
+
+h2{
+	font-variant: small-caps;
+	letter-spacing: 3px;
+	font-size: 18px;
+	color: #ef6a46;
+	margin-bottom: 10px;
+}
+
+p.location {
+	color: #a6a284;
+	font-size: 16px;
+	line-height: 22px;
+	text-shadow: 1px 1px #ffffff;
+	margin-bottom: 10px;
+}
+
+a.directions {
+	font-size: 16px;
+	text-decoration: none;
+	background-color: rgba(197,233,243,0.5);
+	padding: 2px 5px;
+	color: #3886b9;
+	-moz-border-radius: 3px	;
+	border-radius: 3px;
+	font-variant: small-caps;
+	letter-spacing: 1px;
+}
+
+a.directions:hover{
+	background-color: rgba(205,243,253,0.5);
+	color: #3c94cb;
+
+}
+
+#ceremony{
+	float: left;
+	padding-left: 120px;
+	background: url(../images/church.png) no-repeat 65px 0;
+	border-right: 2px dotted #ddd8be;
+	padding-right: 40px;
+}
+
+#reception{
+	float: left;
+	padding-left: 80px;
+	background: url(../images/reception.png) no-repeat 25px 0;
+
+}
+
+#hotel{
+	clear: both;
+	border-bottom: 1px solid #ff9f82;
+	border-top: 1px solid #ff9f82;
+	background-color: rgba(223,222,209,0.52);
+	margin-bottom: 5px;
+}
+
+#hotel .container{
+	width: 420px;
+	padding-left: 220px;
+	padding-top: 20px;
+	background: url(../images/reservations.png) no-repeat 50px 20px;
+}
+
+/* My Comment */
+
+
+#hotel h2{
+	font-variant: small-caps;
+	letter-spacing: 3px;
+	font-size: 18px;
+	color: #ef6a46;
+	margin-bottom: 10px;
+}
+
+#hotel p.location{
+	color: #9a977b;
+}
+
+p.reserve{
+	color: #71716b;
+	margin-bottom: 20px;
+}
+
+span.callout{
+	color: #060606;
+}
+
+#registry{
+	border-top: 1px solid #ff9f82;
+
+}
+.container {
+	padding-left: 60px;
+	padding-bottom: 30px;
+	padding-right: 60px;
+	padding-top: 10px;
+	width: 648px;
+	-webkit-tap-highlight-color: rgb(255,255,0);
+	margin: 0 auto;
+}
+
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
 p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
 img, ins, q, small, strong, sub, sup, dl, dt, dd, ol, ul, li, 
@@ -37,277 +210,3 @@ li {
 }
 
 /* @end */
-
-/* @group Global */
-
-::selection {
-	background: rgba(223,223,223,0.5);
-}
-
-::-moz-selection {
-	background: rgba(223,223,223,0.5);
-}
-
-body{
-	background-color: #fff;
-	padding: 40px 0;
-}
-
-/* @end */
-
-.container {
-	padding-left: 60px;
-	padding-bottom: 30px;
-	padding-right: 60px;
-	padding-top: 10px;
-	width: 648px;
-	-webkit-tap-highlight-color: rgb(255,255,0);
-	margin: 0 auto;
-}
-
-header {
-	content: url(../images/header.jpg), "We are getting married. Save the Date. Jennifer & Matthew.";
-	width: 620px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-#date {
-	content: url(../images/date.jpg), "September 3rd, 2011";
-	width: 620px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 10px;
-}
-
-#ceremony{
-		content: url(../images/ceremony.jpg), "September 3rd, 2011";
-	width: 620px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 50px;
-}
-
-#reception{
-		content: url(../images/reception.jpg), "September 3rd, 2011";
-	width: 620px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 50px;
-}
-
-#hotel{
-		content: url(../images/hotel.jpg), "September 3rd, 2011";
-	width: 620px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 50px;
-}
-
-
-@media only screen and (max-width: 767px) and (min-width: 480px) {
-
-.container {
-	padding: 0 42px;
-	width: 396px;
-}
-
-.left {
-	display: none;
-	margin: 0;
-	padding: 0;
-	width: 0;
-}
-
-.right {
-	float: none;
-	width: 396px;
-}
-
-header {
-	content: url(../images/header.jpg), "We are getting married. Save the Date. Jennifer & Matthew.";
-	width: 390px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-#date {
-	content: url(../images/date.jpg), "September 3rd, 2011";
-	width: 390px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 10px;
-}
-
-#ceremony{
-		content: url(../images/ceremony.jpg), "September 3rd, 2011";
-	width: 390px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 50px;
-}
-
-#reception{
-		content: url(../images/reception.jpg), "September 3rd, 2011";
-	width: 390px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 50px;
-}
-
-#hotel{
-		content: url(../images/hotel.jpg), "September 3rd, 2011";
-	width: 390px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 50px;
-}
-
-}
-
-@media only screen and (max-width: 479px) {
-
-.container {
-	padding: 0 46px;
-	width: 320px;
-}
-
-header {
-	content: url(../images/header.jpg), "We are getting married. Save the Date. Jennifer & Matthew.";
-	width: 310px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-#date {
-	content: url(../images/date.jpg), "September 3rd, 2011";
-	width: 310px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 20px;
-}
-
-#ceremony{
-		content: url(../images/ceremony.jpg), "September 3rd, 2011";
-	width: 310px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 30px;
-}
-
-#reception{
-		content: url(../images/reception.jpg), "September 3rd, 2011";
-	width: 310px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 30px;
-}
-
-#hotel{
-		content: url(../images/hotel.jpg), "September 3rd, 2011";
-	width: 310px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 30px;
-}
-
-}
-
-/* @group iPhone 4 Override */
-
-@media 
-	only screen and (-webkit-min-device-pixel-ratio: 2),
-	only screen and (min-device-pixel-ratio: 2) {
-
-header {
-	content: url(../images/header.jpg), "We are getting married. Save the Date. Jennifer & Matthew.";
-	width: 310px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-#date {
-	content: url(../images/date.jpg), "September 3rd, 2011";
-	width: 310px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 20px;
-}
-
-#ceremony{
-		content: url(../images/ceremony.jpg), "September 3rd, 2011";
-	width: 310px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 30px;
-}
-
-#reception{
-		content: url(../images/reception.jpg), "September 3rd, 2011";
-	width: 310px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 30px;
-}
-
-#hotel{
-		content: url(../images/hotel.jpg), "September 3rd, 2011";
-	width: 310px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 30px;
-}
-
-}
-
-/* @end */
-
-@media print {
-
-* {
-	background: transparent !important;
-	color: #444 !important;
-	text-shadow: none !important;
-}
-
-a, a:visited {
-	color: #444 !important;
-	text-decoration: underline;
-}
-
-a:after {
-	content: " (" attr(href) ")";
-}
-
-abbr:after {
-	content: " (" attr(title) ")";
-}
-
-.ir a:after {
-	content: "";
-}
-
-pre, blockquote {
-	border: 1px solid #999;
-	page-break-inside: avoid;
-}
-
-thead {
-	display: table-header-group;
-}
-
-tr, img {
-	page-break-inside: avoid;
-}
-  @page { margin: 0.5cm; }
-
-p, h2, h3 {
-	orphans: 3;
-	widows: 3;
-}
-
-h2, h3 {
-	page-break-after: avoid;
-}
-
-}
