@@ -1,71 +1,66 @@
-body {
-	background-image: url(../images/tile.gif);
-	font-family: Georgia, "Times New Roman", Times, serif;
+/* @override http://localhost:3000/css/style.css */
+
+/*	Less Framework 4
+	http://lessframework.com
+	by Joni Korpi
+	License: http://creativecommons.org/licenses/MIT/	*/
+
+/* @group Resets */
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figure, figcaption, hgroup, 
+menu, footer, header, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
 }
 
-header {
-	background: #ef6a46 url(../images/glow.png) no-repeat 50% 0;
-	padding-top: 10px;
+article, aside, canvas, figure, figure img, figcaption, hgroup,
+footer, header, nav, section, audio, video {
+	display: block;
 }
 
-#name h1 {
+a img {border: 0;}
+
+/* @end */
+
+/* @group Typography */
+
+h1#names {
 	content: url('../images/names.png'), "Jennifer Cahill & Matthew Tully";
 	margin: 0 auto;
 }
 
-#photos img {
-	-webkit-transition: -webkit-transform .15s linear;
-	-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
-	-moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
-}
-
-img.jen {
-	width: 300px;
-	-webkit-transform: rotate(2deg);
-	-moz-transform: rotate(2deg);
-	margin-left: 26px;
-}
-
-img.matt {
-	width: 200px;
-	-webkit-transform: rotate(-3deg);
-	-moz-transform: rotate(-3deg);
-	margin-top: 20px;
-	margin-left: 15px;
-}
-
-#name h2 {
+h2#tagline {
 	content: url('../images/married.png'), "We're getting married";
 	margin: 0 auto;
 }
 
-#date p {
+h3 {
+	font-variant: small-caps;
+	letter-spacing: 3px;
+	font-size: 18px;
+	color: #6e9d59;
+	line-height: 40px;
+}
+
+h4#date {
 	margin: 0 auto;
 	text-align: center;
-	color: #f2f1d4;
+	color: #6e9d59;
 	letter-spacing: 1px;
 	line-height: 12px;
 	font-size: 21px;
 	font-weight: bold;
 }
 
-#events {
-	background: url(../images/fence.gif) repeat-x;
-	border-bottom: 1px solid #ff9f82;
-	padding-top: 30px;
-	margin-bottom: 5px;
-}
 
-#events .container {
-	display: block;
-}
-
-h2 {
-	font-variant: small-caps;
-	letter-spacing: 3px;
-	font-size: 18px;
-	color: #ef6a46;
-	margin-bottom: 10px;
+body {
+	font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 p.location {
@@ -79,9 +74,9 @@ p.location {
 a.directions {
 	font-size: 16px;
 	text-decoration: none;
-	background-color: rgba(197,233,243,0.5);
+	background-color: rgba(161,89,130,0.5);
 	padding: 2px 5px;
-	color: #3886b9;
+	color: #753057;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 	font-variant: small-caps;
@@ -89,47 +84,8 @@ a.directions {
 }
 
 a.directions:hover {
-	background-color: rgba(205,243,253,0.5);
-	color: #3c94cb;
-}
-
-#ceremony {
-	float: left;
-	padding-left: 120px;
-	background: url(../images/church.png) no-repeat 65px 0;
-	border-right: 2px dotted #ddd8be;
-	padding-right: 40px;
-}
-
-#reception {
-	float: left;
-	padding-left: 80px;
-	background: url(../images/reception.png) no-repeat 25px 0;
-}
-
-#hotel {
-	clear: both;
-	border-bottom: 1px solid #ff9f82;
-	border-top: 1px solid #ff9f82;
-	background-color: rgba(223,222,209,0.52);
-	margin-bottom: 5px;
-}
-
-#hotel .container {
-	width: 420px;
-	padding-left: 220px;
-	padding-top: 20px;
-	background: url(../images/reservations.png) no-repeat 80px 50px;
-}
-
-/* My Comment */
-
-#hotel h2 {
-	font-variant: small-caps;
-	letter-spacing: 3px;
-	font-size: 18px;
-	color: #ef6a46;
-	margin-bottom: 10px;
+	background-color: rgba(188,104,151,0.5);	
+	color: #8f3b6a;
 }
 
 #hotel p.location {
@@ -142,22 +98,165 @@ p.reserve {
 }
 
 span.callout {
-	color: #060606;
+	color: #33302e;
+	text-transform: lowercase;
+	font-variant: small-caps;
+	font-size: 20px;
+	letter-spacing: 1px;
 }
 
-#registry {
-	border-top: 1px solid #ff9f82;
+/* @end */
+
+/* @group Selection */
+
+::-moz-selection 	{background: rgb(255,255,158);}
+img::selection 		{background: transparent;}
+img::-moz-selection	{background: transparent;}
+body {-webkit-tap-highlight-color: rgb(255,255,158);}
+
+/* @end */
+
+/* @group 992px */
+
+/*		Default Layout: 992px. 
+		Gutters: 24px.
+		Outer margins: 48px.
+		Leftover space for scrollbars @1024px: 32px.
+-------------------------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8      9      10
+px      68    160    252    344    436    528    620    712    804    896    */
+
+body {
+	background-image: url(../images/tile.gif);
+	
+}
+
+.group{
+	width: 100%;
 }
 
 .container {
-	padding-left: 60px;
-	padding-bottom: 30px;
-	padding-right: 60px;
-	padding-top: 10px;
-	width: 648px;
-	-webkit-tap-highlight-color: rgb(255,255,0);
+	width: 896px;
+	padding: 20px 48px;
+	-webkit-text-size-adjust: 100%;
 	margin: 0 auto;
 }
+
+header {
+	background: #a8ce93 url(../images/glow.png) no-repeat 50% 0;
+}
+
+#photos {
+	margin: 0 auto;
+	width: 510px;
+}
+
+#photos img {
+	-webkit-transition: -webkit-transform .15s linear;
+	-webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+	-moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+}
+
+img.jen {
+	width: 300px;
+	-webkit-transform: rotate(2deg);
+	-moz-transform: rotate(2deg);
+}
+
+img.matt {
+	width: 200px;
+	-webkit-transform: rotate(-3deg);
+	-moz-transform: rotate(-3deg);
+	margin-top: 20px;
+}
+
+#main.group{
+	background: url(../images/fence.gif) repeat-x;
+	border-bottom: 1px solid #a8ce93;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-bottom: 5px;
+}
+
+#ceremony {
+	width: 227px;
+	float: left;
+	background: url(../images/church.png) no-repeat 160px 5px;
+	border-right: 2px dotted #ddd8be;
+	padding-left: 220px;
+}
+
+#reception {
+	width: 347px;
+	padding-left: 100px;
+	float: left;
+	background: url(../images/reception.png) no-repeat 40px 5px;
+}
+
+#hotel .container {
+	width: 496px;
+	padding-left: 400px;
+	background: url(../images/reservations.png) no-repeat 290px 50px;
+}
+
+#hotel {
+	clear: both;
+	border-bottom: 1px solid #a8ce93;
+	border-top: 1px solid #a8ce93;
+	background-color: rgba(223,222,209,0.52);
+	margin-bottom: 5px;
+}
+
+#registry {
+	border-top: 1px solid #a8ce93;
+	text-align: center;
+}
+
+
+/* @end */
+
+/* @group 768px */
+
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	
+	.container {
+		width: 712px;
+		padding: 48px 28px 60px;
+	}
+}
+
+/* @end */
+
+/* @group 320px */
+
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+@media only screen and (max-width: 767px) {
+	
+	.container {
+		width: 252px;
+		padding: 48px 34px 60px;
+	}
+	
+}
+
+/* @end */
+
+/* My Comment */
 
 /* @group Reset */
 

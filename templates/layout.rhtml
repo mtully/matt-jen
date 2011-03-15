@@ -1,10 +1,5 @@
 <!doctype html>  
 
-<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
-<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
-<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
-<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -14,98 +9,90 @@
   <meta name="description" content="Wedding details for Matthew and Jen Tully's 2011 wedding ceremony." />
   <meta name="author" content="Matthew Tully">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
   <link rel="shortcut icon" href="/favicon.ico">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
-  <link rel="stylesheet" href="/css/style.css?v=2">
-  <script src="/js/libs/modernizr-1.6.min.js"></script>
+  <!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <link rel="stylesheet" media="all" href="/css/style.css">
 
 </head>
 
-<body>
+<body lang="en">
 
-    <header>
-		<section id="name" class="container">
-		<h1>Jennifer Cahill &amp; Matthew Tully</h1>
-		
-		<section id="photos">
-			<img src="../images/jen.jpg" alt="jen" class="jen"/>
-			<img src="../images/matt.jpg" alt="matt" class="matt"/>
-		</section>
-		
-		<h2>We're getting married!</h2>
-		
-		<section id="date">
-			<p>September 3rd, 2011</p>
+    <header class="group">
+		<section id="header-inner" class="container">
+			<h1 id="names">Jennifer Cahill &amp; Matthew Tully</h1>
+				
+			<div id="photos">
+				<img src="../images/jen.jpg" alt="jen" class="jen"/>
+				<img src="../images/matt.jpg" alt="matt" class="matt"/>
+			</div>
+			
+			<h2 id="tagline">We're getting married!</h2>
+			
+			<h4 id="date">September 3rd, 2011</h4>
 		</section>
 	</header>
 	
-	<section id="events">
-		<section class="container">
-			<section id="ceremony">
-				<h2>ceremony</h2>
+	<section id="main" class="group">
+		<section id="main-inner" class="container">
+			
+			<section id="ceremony" class="left">
+				<h3>ceremony</h3>
 				<p class="location">First Church of Christ<br />
 				2183 Main Street<br />
 				Glastonbury, CT 06033</p>
 				<a href="http://goo.gl/maps/M3Lk" class="directions">directions</a>
 			</section>
 		
-			<section id="reception">
-				<h2>reception</h2>
+			<section id="reception" class="right">
+				<h3>reception</h3>
 				<p class="location">Glastonbury Country Club<br />
 				239 Country Club Road<br />
 				South Glastonbury, CT 06073</p>
 				<a href="http://goo.gl/maps/iuLv" class="directions">directions</a>
 			</section>
 			<br class="clearfix" />
+		
 		</section>
 	</section>
 	
-	<section id="hotel">
-		<section class="container">
-			<h2>accommodations</h2>
+	<section id="hotel" class="group">
+		<section id="hotel-inner" class="container">
+			
+			<h3>accommodations</h3>
 			<p class="location">Hilton Garden Inn<br />
 				85 Glastonbury Boulevard<br />
 				Glastonbury, CT 06033 </p>
 			<p class="reserve">To make reservations call <span class="callout">860-659-1025</span> and<br />  
-				mention the <span class="callout">Cahill/Tully group</span> or code 
+				mention the <span class="callout">Cahill-Tully group</span> or code 
 				<span class="callout">CATUWD</span>.</p> 
 				<a href="http://hiltongardeninn.hilton.com/en/gi/groups/personalized/B/BDLGHGI-CATUWD-20110831/index.jhtml?WT.mc_id=POG" class="directions">book online</a>
 		</section>
 	</section>
 	
-		<section id="registry">
-			<div class="container">
-				<h2>registry</h2>
-				<p>Coming Soon.</p>
-			</div>
-		</section>
-</section>
+	<section id="registry">
+		<div id= "regisrty-inner" class="container">
+			<h3>registry</h3>
+			<p>Coming Soon.</p>
+		</div>
+	</section>
+	
+	<footer></footer>
 
-    <footer>
-
-    </footer>
-
-
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
-  <script>!window.jQuery && document.write(unescape('%3Cscript src="js/libs/jquery-1.4.2.js"%3E%3C/script%3E'))</script>
-  
-  <!--[if lt IE 7 ]>
-    <script src="js/libs/dd_belatedpng.js"></script>
-    <script> DD_belatedPNG.fix('img, .png_bg'); </script>
-  <![endif]-->
-
-  <script>
-   var _gaq = [['_setAccount', 'UA-12660808-2'], ['_trackPageview']];
-   (function(d, t) {
-    var g = d.createElement(t),
-        s = d.getElementsByTagName(t)[0];
-    g.async = true;
-    g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    s.parentNode.insertBefore(g, s);
-   })(document, 'script');
-  </script>
+  	<script>
+		var _gaq = [['_setAccount', 'UA-12660808-2'], ['_trackPageview']];
+		(function(d, t) {
+			var g = d.createElement(t),
+			    s = d.getElementsByTagName(t)[0];
+			g.async = true;
+			g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			s.parentNode.insertBefore(g, s);
+		})(document, 'script');
+	</script>
   
 </body>
 </html>
