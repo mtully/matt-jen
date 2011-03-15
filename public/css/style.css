@@ -229,8 +229,51 @@ px      68    160    252    344    436    528    620    712    */
 	
 	.container {
 		width: 712px;
-		padding: 48px 28px 60px;
+		padding: 20px 28px;
 	}
+	
+	
+
+#main.group{
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-bottom: 3px;
+}
+
+#ceremony, #reception {
+	width: 412px;
+	float: none;
+	border-right: none;
+	padding-left: 300px;
+}
+
+#ceremony{
+	background: url(../images/church.png) no-repeat 220px 5px;
+	margin-bottom: 30px;
+	margin-top: 20px;
+}
+
+#reception{
+	background: url(../images/reception.png) no-repeat 220px 5px;
+}
+
+#hotel .container {
+	width: 402px;
+	padding-left: 310px;
+	background: url(../images/reservations.png) no-repeat 190px 50px;
+}
+
+#hotel {
+	border-bottom: 1px solid #a8ce93;
+	border-top: 1px solid #a8ce93;
+	background-color: rgba(223,222,209,0.52);
+	margin-bottom: 3px;
+}
+
+#registry {
+	border-top: 1px solid #a8ce93;
+	text-align: center;
+}
 }
 
 /* @end */
@@ -249,9 +292,76 @@ px      68    160    252    */
 	
 	.container {
 		width: 252px;
-		padding: 48px 34px 60px;
+		padding: 10px 34px;
 	}
 	
+	
+
+h1#names {
+	width: 243px;
+}
+
+img.jen{
+	width: 252px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+img.matt{
+	display: none;
+}
+
+h2#tagline {
+	width: 252px;
+}
+
+h4#date {
+	font-size: 13px;
+}
+
+	
+	
+
+#main.group{
+	padding-top: 0px;
+	padding-bottom: 0px;
+	margin-bottom: 3px;
+}
+
+#ceremony, #reception {
+	width: 202px;
+	float: none;
+	border-right: none;
+	padding-left: 50px;
+}
+
+#ceremony{
+	background: url(../images/church.png) no-repeat 0 5px;
+	margin-bottom: 50px;
+	margin-top: 20px;
+}
+
+#reception{
+	background: url(../images/reception.png) no-repeat 0 5px;
+}
+
+#hotel-inner.container {
+	width: 202px;
+	padding-left: 90px;
+	background: url(../images/reservations.png) no-repeat -3px 50px;
+	padding-bottom: 20px;
+}
+
+p.reserve, span.callout{
+	font-size: 14px;
+}
+
+
+
+#registry {
+	border-top: 1px solid #a8ce93;
+	text-align: center;
+}
 }
 
 /* @end */
