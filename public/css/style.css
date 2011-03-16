@@ -1,3 +1,5 @@
+/* @override http://localhost:3000/css/style.css */
+
 /*	Less Framework 4
 	http://lessframework.com
 	by Joni Korpi
@@ -62,13 +64,27 @@ body {background-image: url(../images/tile.gif);}
 
 header {background: #a8ce93 url(../images/glow.png) no-repeat 50% 0;}
 
-#photos {margin: 0 auto; width: 510px;}
+#photos {margin: 20px auto 10px; width: 710px;}
 
 #photos img {-webkit-transition: -webkit-transform .15s linear; -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25); -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);}
 
-img.jen {width: 300px; -webkit-transform: rotate(2deg); -moz-transform: rotate(2deg);}
+img.us {width: 220px; -webkit-transform: rotate(-1deg); -moz-transform: rotate(-1deg); margin-top: 20px;
+	position: relative;
+	left: 40px;
+	bottom: 8px;
+}
 
-img.matt {width: 200px; -webkit-transform: rotate(-3deg); -moz-transform: rotate(-3deg); margin-top: 20px;}
+img.jen {width: 200px; -webkit-transform: rotate(2deg); -moz-transform: rotate(2deg);
+	position: relative;
+	bottom: 50px;
+	left: 37px;
+}
+
+img.matt {width: 200px; -webkit-transform: rotate(-3deg); -moz-transform: rotate(-3deg); margin-top: 20px;
+	position: relative;
+	bottom: 22px;
+	right: -45px;
+}
 
 #main.group {background: url(../images/fence.gif) repeat-x; border-bottom: 1px solid #a8ce93; padding-top: 20px; padding-bottom: 20px; margin-bottom: 5px;}
 
@@ -114,7 +130,7 @@ h1#names {width: 243px;}
 
 #photos {margin: 0 auto; width: 252px;}
 
-img.jen {width: 252px; margin-top: 10px; margin-bottom: 10px;}
+img.jen {display: none;}
 
 img.matt {display: none;}
 
@@ -130,7 +146,7 @@ h4#date {font-size: 13px;}
 
 #reception {background: url(../images/reception.png) no-repeat 0 5px;}
 
-#hotel-inner.container {width: 202px; padding-left: 90px; background: url(../images/reservations.png) no-repeat -3px 50px; padding-bottom: 20px;}
+#hotel-inner.container {width: 202px; padding-left: 50px; background: url(../images/reservations.png) no-repeat -3px 50px; padding-bottom: 20px;}
 
 p.reserve, span.callout {font-size: 14px;}
 
