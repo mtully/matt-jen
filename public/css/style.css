@@ -22,9 +22,15 @@ a img {border: 0;}
 
 /* Typography */
 
-h1#names {content: url('../images/names.png'), "Jennifer Cahill & Matthew Tully"; margin: 0 auto;}
+h1#names {content: url('../images/names.png'), "Jennifer Cahill & Matthew Tully"; margin: 0 auto;
+	color: #7fb566;
+	text-align: center;
+}
 
-h2#tagline {content: url('../images/married.png'), "We're getting married"; margin: 0 auto;}
+h2#tagline {content: url('../images/married.png'), "We're getting married"; margin: 0 auto;
+	color: #7fb566;
+	text-align: center;
+}
 
 h3 {font-variant: small-caps; letter-spacing: 3px; font-size: 18px; color: #6e9d59; line-height: 40px;}
 
