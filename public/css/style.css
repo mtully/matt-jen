@@ -40,7 +40,7 @@ body {font-family: Georgia, "Times New Roman", Times, serif;}
 
 p.location {color: #a6a284; font-size: 16px; line-height: 22px; text-shadow: 1px 1px #ffffff; margin-bottom: 10px;}
 
-a.directions {font-size: 16px; text-decoration: none; background-color: rgba(161,89,130,0.5); padding: 2px 5px; color: #753057; -moz-border-radius: 3px; border-radius: 3px; font-variant: small-caps; letter-spacing: 1px;}
+a.directions {font-size: 16px; text-decoration: none; background-color: rgba(160,90,130,0.5); padding: 2px 5px; color: #753057; -moz-border-radius: 3px; border-radius: 3px; font-variant: small-caps; letter-spacing: 1px;}
 
 a.directions:hover {background-color: rgba(188,104,151,0.5); color: #8f3b6a;}
 
@@ -100,9 +100,29 @@ img.matt {width: 200px; -webkit-transform: rotate(-3deg); -moz-transform: rotate
 
 #hotel .container {width: 496px; padding-left: 400px; background: url(../images/reservations.png) no-repeat 290px 50px;}
 
-#hotel {clear: both; border-bottom: 1px solid #a8ce93; border-top: 1px solid #a8ce93; background-color: rgba(223,222,209,0.52); margin-bottom: 5px;}
+#hotel {clear: both; border-bottom: 1px solid #a8ce93; border-top: 1px solid #a8ce93; background-color: rgba(222,222,210,0.5); margin-bottom: 5px;}
 
 #registry {border-top: 1px solid #a8ce93; text-align: center;}
+
+.logo {
+    display:block;
+    height:58px;
+    text-indent:-9999px;
+    width:200px;
+	margin: 20px auto 10px;
+}
+
+#macys{
+	background-image: url(../images/macys.png);
+}
+
+#potterybarn{
+	background-image: url(../images/potterybarn.png);
+}
+
+#williamssonoma{
+	background-image: url(../images/williamssonoma.png);
+}
 
 /* 768px */
 
