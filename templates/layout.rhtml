@@ -1,4 +1,8 @@
 <!doctype html>  
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 
 <head>
   <meta charset="utf-8">
@@ -10,82 +14,65 @@
   <meta name="author" content="Matthew Tully">
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-  <link rel="shortcut icon" href="/favicon.ico">
 
   <!--[if lt IE 9]>
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 
-  <link rel="stylesheet" media="all" href="/css/style.css">
+  <link rel="stylesheet" media="all" href="/css/base.css">
+  <link rel="stylesheet" media="all" href="/css/skeleton.css">
+  <link rel="stylesheet" media="all" href="/css/layout.css">
+
+  <link rel="shortcut icon" href="/images/favicon.ico">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/images/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch-icon-114x114.png" />
 
 </head>
 
-<body lang="en">
-
-    <header class="group">
-		<section id="header-inner" class="container">
-			<h1 id="names">Jennifer Cahill &amp; Matthew Tully</h1>
-				
-			<div id="photos">
-				<img src="../images/jen.jpg" alt="jen" class="jen"/>
-				<img src="../images/us.jpg" alt="us" class="us"/>
-				<img src="../images/matt.jpg" alt="matt" class="matt"/>
-			</div>
-			
-			<h2 id="tagline">We're getting married!</h2>
-			
-			<h4 id="date">September 3rd, 2011</h4>
-		</section>
-	</header>
-	
-	<section id="main" class="group">
-		<section id="main-inner" class="container">
-			
-			<section id="ceremony" class="left">
-				<h3>ceremony</h3>
-				<p class="location">First Church of Christ<br />
-				2183 Main Street<br />
-				Glastonbury, CT 06033</p>
-				<a href="http://goo.gl/maps/M3Lk" class="directions">directions</a>
-			</section>
-		
-			<section id="reception" class="right">
-				<h3>reception</h3>
-				<p class="location">Glastonbury Country Club<br />
-				239 Country Club Road<br />
-				South Glastonbury, CT 06073</p>
-				<a href="http://goo.gl/maps/iuLv" class="directions">directions</a>
-			</section>
-			<br class="clearfix" />
-		
-		</section>
-	</section>
-	
-	<section id="hotel" class="group">
-		<section id="hotel-inner" class="container">
-			
-			<h3>accommodations</h3>
-			<p class="location">Hilton Garden Inn<br />
-				85 Glastonbury Boulevard<br />
-				Glastonbury, CT 06033 </p>
-			<p class="reserve">To make reservations call <span class="callout">860-659-1025</span> and<br />  
-				mention the <span class="callout">Cahill-Tully group</span> or code 
-				<span class="callout">CATUWD</span>.</p> 
-				<a href="http://hiltongardeninn.hilton.com/en/gi/groups/personalized/B/BDLGHGI-CATUWD-20110831/index.jhtml?WT.mc_id=POG" class="directions">book online</a>
-		</section>
-	</section>
-	
-	<section id="registry">
-		<div id= "regisrty-inner" class="container">
-			<h3>registry</h3>
-			<a href="http://www1.macys.com/registry/wedding/guest/?registryId=442479" title="Macys" id="macys" class="logo">Macys</a>
-			<a href="http://www.potterybarn.com/registry/2746895/registry-list.html" title="Pottery Barn" id="potterybarn" class="logo">Pottery Barn</a>
-			<a href="http://www.williams-sonoma.com/registry/2746932/registry-list.html" title="Williams-Sonoma" id="williamssonoma" class="logo">Williams-Sonoma</a>
+<body>
+	<div class="container">	
+		<div class="sixteen columns">
+			<h1 class="remove-bottom" style="margin-top: 40px">Skeleton</h1>
+			<h5>Version 1.0.2</h5>
+			<hr />
 		</div>
-	</section>
-	
-	<footer></footer>
+		<div class="one-third column">
+			<h3>About Skeleton?</h3>	
+			<p>Skeleton is a small collection of well-organized CSS & JS files that can help you rapidly develop sites that look beautiful at any size, be it a 17" laptop screen or an iPhone. It's based on a responsive grid, but also provides very basic CSS for typography, buttons, tabs, forms and media queries. Go ahead, resize this super basic page to see the grid in action.</p>
+		</div>
+		<div class="one-third column">
+			<h3>Three Core Principles</h3>	
+			<p>Skeleton is built on three core principles:</p>
+			<ul class="square">
+				<li><strong>A Responsive Grid Down To Mobile</strong>: Elegant scaling from a browser to tablets to mobile.</li>
+				<li><strong>Fast to Start</strong>: It's a tool for rapid development with best practices</li>
+				<li><strong>Style Agnostic</strong>: It provides the most basic, beautiful styles, but is meant to be overwritten.</li>
+			</ul>
+		</div>
+		<div class="one-third column">
+			<h3>Docs &amp; Support</h3>	
+			<p>The easiest way to really get started with Skeleton is to check out the full docs and info at <a href="http://www.getskeleton.com">www.getskeleton.com.</a>. Skeleton is also open-source and has a <a href="https://github.com/dhgamache/skeleton">project on git</a>, so check that out if you want to report bugs or create a pull request. If you have any questions, thoughts, concerns or feedback, please don't hesitate to email me at <a href="mailto:hi@getskeleton.com">hi@getskeleton.com</a>.</p>
+		</div>
 
+	</div><!-- container -->
+<!--
+<p class="location">First Church of Christ<br /> 2183 Main Street<br /> Glastonbury, CT 06033</p>
+<a href="http://goo.gl/maps/M3Lk" class="directions">directions</a>
+
+<p class="location">Glastonbury Country Club<br />239 Country Club Road<br />South Glastonbury, CT 06073</p>
+<a href="http://goo.gl/maps/iuLv" class="directions">directions</a>
+
+<p class="location">Hilton Garden Inn<br />85 Glastonbury Boulevard<br />Glastonbury, CT 06033 </p>
+<p class="reserve">To make reservations call <span class="callout">860-659-1025</span> and<br />  mention the <span class="callout">Cahill-Tully group</span> or code <span class="callout">CATUWD</span>.</p> <a href="http://hiltongardeninn.hilton.com/en/gi/groups/personalized/B/BDLGHGI-CATUWD-20110831/index.jhtml?WT.mc_id=POG" class="directions">book online</a>
+
+<a href="http://www1.macys.com/registry/wedding/guest/?registryId=442479" title="Macys" id="macys" class="logo">Macys</a>
+
+<a href="http://www.potterybarn.com/registry/2746895/registry-list.html" title="Pottery Barn" id="potterybarn" class="logo">Pottery Barn</a>
+
+<a href="http://www.williams-sonoma.com/registry/2746932/registry-list.html" title="Williams-Sonoma" id="williamssonoma" class="logo">Williams-Sonoma</a> -->
+		
+		
   	<script>
 		var _gaq = [['_setAccount', 'UA-12660808-2'], ['_trackPageview']];
 		(function(d, t) {
@@ -96,6 +83,10 @@
 			s.parentNode.insertBefore(g, s);
 		})(document, 'script');
 	</script>
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
+	<script>window.jQuery || document.write("<script src='javascripts/jquery-1.5.1.min.js'>\x3C/script>")</script>
+	<script src="javascripts/app.js"></script>
   
 </body>
 </html>
