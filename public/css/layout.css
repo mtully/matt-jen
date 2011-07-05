@@ -1,67 +1,62 @@
-/*		Tablet Layout: 768px. Gutters: 24px. Outer margins: 28px.
------------------------------------------------------------------
-cols    1     2      3      4      5      6      7      8
-px      68    160    252    344    436    528    620    712    */
+/* @override http://localhost:3000/css/layout.css */
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-	
-	body {
-		width: 712px;
-		padding: 48px 28px 60px;
-		background: rgb(232,232,232);
-		color: rgb(60,60,60);
-		-webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
-	}
+/* base layout */
+
+body {
+	width: 712px;
+	padding: 48px 28px 60px;
+	background: rgb(232,232,232);
+	color: rgb(60,60,60);
+	-webkit-text-size-adjust: 100%;
+		margin: 0 auto;
+
 }
 
-
-
-/*		Mobile Layout: 320px. Gutters: 24px. Outer margins: 34px. 
----------------------------------------------
-cols    1     2      3
-px      68    160    252    */
+/* mobile */
 
 @media only screen and (max-width: 767px) {
-	
-	body {
-		width: 252px;
-		padding: 48px 34px 60px;
-	}
-	
+
+body {
+	width: 252px;
+	padding: 48px 34px 60px;
 }
 
+}
 
-
-/*		Wide Mobile Layout: 480px. Gutters: 24px. Outer margins: 22px.
-------------------------------------------------------------
-cols    1     2      3      4      5
-px      68    160    252    344    436    */
+/* wide mobile */
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-	
-	body {
-		width: 436px;
-		padding: 36px 22px 48px;
-	}
-	
+
+body {
+	width: 436px;
+	padding: 36px 22px 48px;
 }
 
+}
 
 /*	Retina media query. */
 
 @media 
 	only screen and (-webkit-min-device-pixel-ratio: 2),
 	only screen and (min-device-pixel-ratio: 2) {
-	
-	body {
-	
-	}
+
+body {
 	
 }
-	
+
+}
+
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
 
 /* #Font-Face */
-		
+
 /*	@font-face {
 	    font-family: 'FontName';
 	    src: url('../fonts/FontName.eot');
