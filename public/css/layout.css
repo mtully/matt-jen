@@ -7,21 +7,12 @@
 * 5/20/2011
 */
 
-/* Table of Content
-==================================================
-	#Site Styles
-	#Page Styles
-	#Media Queries
-	#Font-Face */
 	
-/* #Site Styles
-================================================== */
+/* #Site Styles */
 
-/* #Page Styles
-================================================== */
+/* #Page Styles */
 
-/* #Media Queries
-================================================== */
+/* #Media Queries */
 	
 	/* iPad Portrait/Browser */
 	@media only screen and (min-width: 768px) and (max-width: 991px) {}
@@ -45,12 +36,7 @@
 	@media only screen and (min-width: 480px) and (max-width: 767px) and (max-device-width: 1000px) {}
 	
 
-/* #Font-Face
-================================================== */
-/* 	This is the proper syntax for an @font-face file 
-		Just create a "fonts" folder at the root, 
-		copy your FontName into code below and remove
-		comment brackets */
+/* #Font-Face */
 		
 /*	@font-face {
 	    font-family: 'FontName';
