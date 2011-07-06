@@ -44,7 +44,7 @@ img::-moz-selection {
 /* #Typography */
 
 h1 {
-	font-family: 'Pacifico', cursive; 
+	font-family: 'Pacifico', Helvetica, cursive; 
 	font-weight: 400;
 	font-size: 36px;
 	line-height: 72px;
