@@ -1,14 +1,274 @@
 /* @override http://localhost:3000/css/layout.css */
 
-/* base layout */
+/* #Reset & Basics */
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figure, figcaption, hgroup, 
+menu, footer, header, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, canvas, figure, figure img, figcaption, hgroup,
+footer, header, nav, section, audio, video {
+	display: block;
+}
+
+a img {
+	border: 0;
+}
+
+/* #Basic Styles */
+
+::selection {
+	background: rgb(255,255,158);
+}
+
+::-moz-selection {
+	background: rgb(255,255,158);
+}
+
+img::selection {
+	background: transparent;
+}
+
+img::-moz-selection {
+	background: transparent;
+}
+
+/* #Typography */
+
+h1 {
+	font-family: 'Pacifico', cursive; 
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 72px;
+}
+
+h2 {
+	font-family: 'Droid Sans', sans-serif;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 48px;
+	padding-left: 35px;
+}
+
+h2.bigday{
+	background: url(../images/bigday.png) no-repeat 5px 15px;
+}
+
+
+h2.schedule{
+}
+
+h2.locations{
+	background: url(../images/location.png) no-repeat 5px 10px;
+}
+
+h2.map{
+	background: url(../images/map.png) no-repeat 5px 10px;
+}
+
+h2.registry{
+	background: url(../images/registry.png) no-repeat 5px 10px;
+}
+
+
+
+h3 {
+	font-family: 'Droid Sans', sans-serif;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 26px;
+}
+
+h4 {
+	font-size: 22px;
+	line-height: 30px;
+}
+
+h5{
+
+	color: #aaa;
+	margin-top: -15px;
+	margin-bottom: 20px;
+	font: italic bold 18px 'Droid Sans', sans-serif;
+}
+
+p {
+	font-family: 'Brawler', Georgia, serif;
+	font-weight: 400;
+}
+
+/* #Links */
+
+a, a:visited {
+	color: #333;
+	text-decoration: underline;
+	outline: 0;
+}
+
+a:hover, a:focus {
+	color: #000;
+}
+
+p a, p a:visited {
+	line-height: inherit;
+}
+
+/* Base Layout */
 
 body {
+	background: #efefef url(../images/bg.png);
+	color: #777;
+	font: 14px/21px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin: 0 auto;
+	padding: 24px 28px 60px;
 	width: 712px;
-	padding: 48px 28px 60px;
-	background: rgb(232,232,232);
-	color: rgb(60,60,60);
-	-webkit-text-size-adjust: 100%;
-		margin: 0 auto;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: none;
+	-webkit-tap-highlight-color: rgb(255,255,158);
+}
+
+.section {
+	padding-bottom: 40px;
+	padding-top: 10px;
+}
+
+.slideshow{
+	width: 900px;
+	height: 450px;
+	background: url(../images/frame.png) no-repeat;
+	margin-left: -94px;
+	margin-bottom: -50px;
+}
+
+.slide {
+	position: relative;
+	width: 675px;
+	height: 320px;
+	left: 112px;
+	top: 27px;
+}
+
+.slide img {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.box img{
+	border: 6px solid #fdfdfd;
+}
+
+.intro {
+	width: 436px;
+	float: left;
+	margin-right: 24px;
+}
+
+.schedule{
+	width: 232px;
+	background-color: #fef3b1;
+	float: left;
+	-moz-box-shadow: 0 1px 3px #bbb;
+	-webkit-box-shadow: 0 1px 3px #bbb;
+	box-shadow: 0 1px 3px #bbb;
+	border-top: 2px solid #fcfbd3;
+	padding: 0 10px 20px;
+}
+
+.schedule h2{
+	color: #385e90;
+	background: url(../images/schedule.png) no-repeat 5px 13px;
+}
+
+.schedule ul{
+	list-style-type: none;
+}
+
+.schedule li{
+	border-bottom: 1px dotted #d3ca93;
+	padding: 5px 2px 5px 37px;
+}
+
+.schedule li.last{
+	border-bottom-style: none;
+}
+
+.schedule b{
+	padding-right: 8px;
+}
+.third{
+	width: 222px;
+	float: left;
+	padding: 15px 5px 20px;
+}
+
+.box{
+	background-color: #f2f2f2;
+	-webkit-transition:background-color 0.6s ease-out;  
+    -moz-transition:background-color 0.5s ease-out;  
+    -o-transition:background-color 0.5s ease-out;  
+	transition:background-color 0.5s ease-out;
+	border-radius: 2px;
+	-moz-box-shadow: 0 0 3px #bbb;
+	-webkit-box-shadow: 0 0 3px #bbb;
+	box-shadow: 0 0 3px #bbb;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.box:hover{
+	background-color: #fff;
+	-webkit-transition:background-color 0.3s ease-in;  
+    -moz-transition:background-color 0.3s ease-in;  
+    -o-transition:background-color 0.3s ease-in;  
+	transition:background-color 0.3s ease-in;
+}
+
+#ceremony, #reception, #macys, #pbarn {
+	margin-right: 8px;
+}
+
+.reservations{
+	background-color: #dcdcdc;
+	color: #555;
+	padding: 5px 10px;
+	border-top: 1px solid #d1d1d1;
+	border-bottom: 1px solid #f1f1f1;
+}
+
+.reservations b{
+	margin-right: 12px;
+}
+
+
+
+.gift{
+	background-color: #d2e6ec;
+	-webkit-transition:background-color 0.6s ease-out;  
+    -moz-transition:background-color 0.5s ease-out;  
+    -o-transition:background-color 0.5s ease-out;  
+	transition:background-color 0.5s ease-out;
+	border-radius: 2px;
+	margin-bottom: 20px;
+	width: 232px;
+	float: left;
+	text-align: center;
+}
+
+.gift:hover{
+	background-color: #96d4ea;
+	-webkit-transition:background-color 0.3s ease-in;  
+    -moz-transition:background-color 0.3s ease-in;  
+    -o-transition:background-color 0.3s ease-in;  
+	transition:background-color 0.3s ease-in;
 
 }
 
@@ -18,7 +278,51 @@ body {
 
 body {
 	width: 252px;
-	padding: 48px 34px 60px;
+	padding: 24px 34px 60px;
+}
+
+h1{
+	font-size: 28px;
+}
+
+h2{
+	font-size: 14px;
+}
+
+h5{
+	font-size: 14px;
+	margin-top: -20px;
+}
+
+.slideshow{
+	display: none;
+}
+
+.intro{
+	margin-bottom: 30px;
+	width: 252px;
+}
+
+p {
+	font-size: 12px;
+	line-height: 20px;
+}
+
+.section{
+	padding-bottom: 10px;
+}
+
+
+.schedule{
+	width: 232px;
+}
+
+.box{
+	width: 242px;
+}
+
+#registry{
+	display: none;
 }
 
 }
@@ -29,23 +333,31 @@ body {
 
 body {
 	width: 436px;
-	padding: 36px 22px 48px;
+	padding: 18px 22px 48px;
+}
+
+.intro{
+	width: 436px;
+}
+
+.schedule {
+	width: 416px;
+}
+
+
+
+.box{
+	width: 426px;
+	text-align: left;
+}
+
+.box img{
+	float: left;
+	max-height: 70px;
+	margin: 0 20px -5px 10px;
 }
 
 }
-
-/*	Retina media query. */
-
-@media 
-	only screen and (-webkit-min-device-pixel-ratio: 2),
-	only screen and (min-device-pixel-ratio: 2) {
-
-body {
-	
-}
-
-}
-
 .clear {
 	clear: both;
 	display: block;
@@ -54,16 +366,3 @@ body {
 	width: 0;
 	height: 0;
 }
-
-/* #Font-Face */
-
-/*	@font-face {
-	    font-family: 'FontName';
-	    src: url('../fonts/FontName.eot');
-	    src: url('../fonts/FontName.eot?iefix') format('eot'),
-	         url('../fonts/FontName.woff') format('woff'),
-	         url('../fonts/FontName.ttf') format('truetype'),
-	         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
-	    font-weight: normal;
-	    font-style: normal; }
-*/
